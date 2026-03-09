@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right, #00bee6, #1100ea);
+  font-family: "Lora", serif;
+  font-size: medium;
+  min-height: 100vh;
+  display: flex;
+}
+
+label {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  padding: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  margin: auto;
+  border-radius: 16px;
+  flex-direction: column;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.valores .item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.valores .item label {
+  margin-bottom: 5px;
+}
+
+.valores .item input {
+  width: auto;
+  height: 30px;
+  font-size: medium;
+}
+
+#sidebar {
+  max-width: 85px;
+  height: 100%;
+  background-color: #009ffb;
+  padding: 40px 0 40px 0;
+  box-shadow: 3px 0 0 #0c32e9;
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#sidebar.open-sidebar {
+  max-width: 380px;
+  transition: 0.5s;
+}
+
+#open-btn {
+  width: 100%;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#open-btn > i {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#open-btn > i:hover {
+  color: #0c32e9;
+}
+
+#side-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.side-item {
+  width: 100%;
+}
+
+.side-item.active {
+  background-color: #0c32e9;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.active {
+  background-color: #0c32e9;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.side-item:hover:not(.active) {
+  background: #ffffff;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.side-item:hover:not(.active) .icon,
+.side-item:hover:not(.active) .item-description {
+  color: #0c32e9;
+}
+
+.side-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.icon {
+  font-size: 30px;
+}
+.item-description {
+  color: #ffffff;
+  margin-left: 25px;
+  overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");

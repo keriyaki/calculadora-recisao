@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <title>Recisão Calcular</title>
+    <link rel="icon" href="calc.png" type="image/png" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div id="open-btn">
+        <i class="bi bi-list"></i>
+      </div>
+      <ul id="side-items">
+        <li class="side-item">
+          <a href="index.html">
+            <span class="icon"><i class="bi bi-house-door"></i></span>
+            <span class="item-description">Página inicial</span>
+          </a>
+        </li>
+        <li class="side-item">
+          <a href="calculadora.html">
+            <span class="icon"><i class="bi bi-calculator"></i></span>
+            <span class="item-description">Calculadora de recisão</span>
+          </a>
+        </li>
+        <li class="side-item">
+          <a href="about.html">
+            <span class="icon"><i class="bi bi-info-circle"></i></span>
+            <span class="item-description">Sobre o site</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <h1>Calcule o quanto te devem!</h1>
+
+      <div class="valores">
+        <div class="item">
+          <label for="salario">Saldo de salário:</label>
+          <input type="text" id="salario" />
+        </div>
+        <div class="item">
+          <label for="aviso"> Aviso prévio indenizado (se aplicável):</label>
+          <input type="text" id="aviso" />
+        </div>
+        <div class="item">
+          <label for="decimoterceiro">13º Salário Proporcional:</label>
+          <input type="text" id="decimoterceiro" />
+        </div>
+        <div class="item">
+          <label for="feriasVenc">Férias Vencidas + 1/3 (se houver):</label>
+          <input type="text" id="feriasVenc" />
+        </div>
+        <div class="item">
+          <label for="feriasProp">Férias Proporcionais + 1/3:</label>
+          <input type="text" id="feriasProp" />
+        </div>
+        <div class="item">
+          <label for="multa">Multa de 40% do FGTS:</label>
+          <input type="text" id="multa" />
+        </div>
+        <div class="item">
+          <label for="aviso">Aviso prévio indenizado (se aplicável):</label>
+          <input type="text" id="aviso" />
+        </div>
+
+        <footer></footer>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
