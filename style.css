@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  caret-color: transparent;
 }
 
 header {
@@ -83,6 +84,7 @@ h1 {
   padding-left: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
+  outline: none;
 }
 
 #open-btn > i {
